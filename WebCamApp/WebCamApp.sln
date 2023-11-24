@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCamApp", "WebCamApp.csproj", "{E13CE339-207F-4012-B599-9E9216361B13}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpcUaCLIENT", "..\OpcUa\OpcUaCLIENT.csproj", "{3671183D-FD2D-4181-8FD8-FC664C6A10F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpcUaTypes", "..\OpcUaTypes\OpcUaTypes.csproj", "{4259973D-0796-4298-9562-CA8176BFA9F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E13CE339-207F-4012-B599-9E9216361B13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E13CE339-207F-4012-B599-9E9216361B13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E13CE339-207F-4012-B599-9E9216361B13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E13CE339-207F-4012-B599-9E9216361B13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3671183D-FD2D-4181-8FD8-FC664C6A10F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3671183D-FD2D-4181-8FD8-FC664C6A10F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3671183D-FD2D-4181-8FD8-FC664C6A10F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3671183D-FD2D-4181-8FD8-FC664C6A10F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4259973D-0796-4298-9562-CA8176BFA9F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4259973D-0796-4298-9562-CA8176BFA9F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4259973D-0796-4298-9562-CA8176BFA9F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4259973D-0796-4298-9562-CA8176BFA9F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC33B89A-BB81-44AD-90B1-5A65B9227F1D}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,47 @@
+﻿<Window x:Class="WebCamService.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebCamService" xmlns:webcamapp="clr-namespace:WebCamApp" d:DataContext="{d:DesignInstance Type=webcamapp:ImageViewModel}"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Name="grid1" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"  />
+            <!--<<< Will resize to the size of contents -->
+            <RowDefinition Height="100" />
+            <!--<<< Will resize taking all remaining space -->
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Image Grid.Row="0" Grid.Column="0" Name="imageG"  Stretch="Uniform"  Margin="10,10,10,10" Source="{Binding Path=ImageSource}"  >
+            <!--<Image Name="imageG" HorizontalAlignment="Left" Height="308" Margin="75,26,0,0" VerticalAlignment="Top" Width="528" >-->
+            <!--<Image HorizontalAlignment="Left" Height="308" Margin="75,26,0,0" VerticalAlignment="Top" Width="528" Source="C:\Users\itppa\OneDrive - Bystronic Laser AG\Desktop\capture-1700750666.jpg">-->
+            <UIElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </UIElement.RenderTransform>
+            <!--<Image.Source>
+    -->
+            <!--<BitmapImage DecodePixelWidth="200" UriSource="C:\Bystronic\docs\AGVAdapter\ScreenAgv.jpg"/>-->
+            <!--
+    <BitmapImage DecodePixelWidth="200" UriSource="{Binding Path=ImageSource, Mode=TwoWay}" />
+</Image.Source>-->
+        </Image>
+
+        <Button Grid.Row="1" Grid.Column="0" Name="buttonOk" Content="Ok" Click="Button_Click" HorizontalAlignment="Center" Margin="10,10,10,10" VerticalAlignment="Top" Height="26" Width="92" IsEnabled="{Binding Path=EnableProperty}" RenderTransformOrigin="-1.58,1.958"/>
+
+
+
+
+        <!--<Button Content="Ok" HorizontalAlignment="Left" Margin="616,355,0,0" VerticalAlignment="Top" Height="26" Width="92" IsEnabled="false"/>-->
+        <!--<Image Source="{Binding ImageSource,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0">
+        </Image>-->
+    </Grid>
+</Window>
